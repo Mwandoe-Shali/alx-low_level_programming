@@ -9,7 +9,7 @@
  * Return: Always (Success)
  *
  */
-int main(void)
+int main(void) /*The main function prints if a number is positive, zero, or negative.*/
 
 {
 
