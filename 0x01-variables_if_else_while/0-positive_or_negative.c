@@ -9,7 +9,7 @@
  * Return: Always (Success)
  *
  */
-int main(void) /*The main function prints if a number is positive, zero, or negative.*/
+int main(void)
 
 {
 
@@ -30,6 +30,7 @@ int main(void) /*The main function prints if a number is positive, zero, or nega
 	{
 	printf("%d is negative\n", n);
 	}
+	/*The main function prints if a number is positive, zero, or negative.*/
 	return (0);
 
 }
