@@ -5,7 +5,9 @@
 #include <stdio.h>
 
 /*
- * main - Prints if number is positive, zero or negative
+ * main - Prints a random number and states 
+ * 	  if number is positive, zero or negative
+ *	  
  * Return: Always (Success)
  *
  */
@@ -30,7 +32,6 @@ int main(void)
 	{
 	printf("%d is negative\n", n);
 	}
-	/*The main function prints if a number is positive, zero, or negative.*/
 	return (0);
 
 }
