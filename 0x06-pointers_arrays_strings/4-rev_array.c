@@ -12,7 +12,10 @@ void reverse_array(int *a, int n)
 	/* Iterate over the array up to the middle element */
 	for (i = 0; i < n / 2; i++)
 	{
-		/* Swap the elements at the current index and its corresponding index from the end */
+		/*
+		 * Swap elements at current index and its corresponding
+		 * index from the end
+		 */
 		temp = a[i];
 		a[i] = a[n - 1 - i];
 		a[n - 1 - i] = temp;
