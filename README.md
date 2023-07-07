@@ -15,3 +15,5 @@
 0x07-pointers_arrays_stringsi
 
 0x08-recursion
+
+0x09-static_libraries
