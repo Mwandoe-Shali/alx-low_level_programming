@@ -18,21 +18,20 @@ int main(int agrc, char *argv[])
 
 		if (num <= 0)
 		{
-		    error = 1;
-		    break;
+			error = 1;
+			break;
 		}
-
 		sum += num;
 	}
 
 	if (error)
 	{
 		printf("Error\n");
-		return (1)
+		return (1);
 	}
 
 	printf("%d\n", sum);
 
 	return (0);
-	
-}		    
+}
+
