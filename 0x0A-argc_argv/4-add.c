@@ -17,5 +17,22 @@ int main(int agrc, char *argv[])
 		int num = atoi(argv[i]);
 
 		if (num <= 0)
+		{
 		    error = 1;
-		    
+		    break;
+		}
+
+		sum += num;
+	}
+
+	if (error)
+	{
+		printf("Error\n");
+		return (1)
+	}
+
+	printf("%d\n", sum);
+
+	return (0);
+	
+}		    
