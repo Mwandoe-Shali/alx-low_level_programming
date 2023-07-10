@@ -15,7 +15,8 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	int first, second;
+	int first;
+	int second;
 	int mul;
 
 	first = atoi(argv[1]);
