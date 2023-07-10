@@ -4,7 +4,6 @@
 /**
  * main - Entry point
  * Return: 0
- * 
  * @argc: Counts the number of arguments in the command line arguments
  * @argv: Array of the arguments
  */
