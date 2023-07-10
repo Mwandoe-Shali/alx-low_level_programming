@@ -15,10 +15,8 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	int mul;
-	int num1;
-	int num2;
-
+	int num1 = 0, num2 = 0, mul =0;
+	
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[2]);
 	mul = first * second;
