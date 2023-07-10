@@ -1,37 +1,32 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
 
-int main(int agrc, char *argv[])
+/**
+*main - adds positive numbers
+*@argc: number of arguments
+*@argv: array of arguments
+*Return: 0 on success, 1 on failure
+*/
+
+int main(int argc, char *argv[])
 {
-	if (argc == 1)
+	int i, j, sum = 0;
+
+	for (i = 1; i < argc; i++)
 	{
-		printf("0\n");
-		return (0);
-	}
-
-	int sum = 0, error = 0;
-
-	for (int i = 0; i < argc; i++)
-	{
-		int num = atoi(argv[i]);
-
-		if (num <= 0)
+		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			error = 1;
-			break;
+			if (argv[i][j] < '0' || argv[i][j] > '9')
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
-		sum += num;
-	}
 
-	if (error)
-	{
-		printf("Error\n");
-		return (1);
+		sum += atoi(argv[i]);
 	}
 
 	printf("%d\n", sum);
 
 	return (0);
 }
-
