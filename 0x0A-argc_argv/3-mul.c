@@ -15,12 +15,12 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	int first;
-	int second;
 	int mul;
+	int num1;
+	int num2;
 
-	first = atoi(argv[1]);
-	second = atoi(argv[2]);
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[2]);
 	mul = first * second;
 	printf("%d\n", mul);
 	return (0);
