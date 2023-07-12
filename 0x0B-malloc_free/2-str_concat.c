@@ -35,7 +35,7 @@ char *str_concat(char *s1, char *s2)
 	for (index = 0; s2[index]; index++)
 		s3[concat_index++] = s2[index++];
 
-	s3[concat_index - 1] = '\0';
+	s3[concat_index] = '\0';
 
 	return (s3);
 }
