@@ -5,7 +5,7 @@
  * _strdup - returns a pointer to a new string
  * which is a duplicate of the string str
  * @str: String to be copied
- * 
+ *
  * Return:
  */
 char *_strdup(char *str)
@@ -15,7 +15,7 @@ char *_strdup(char *str)
 
 	char *copy;
 	int i, len = 0;
-	
+
 	while (str[len] != '\0')
 		len++;
 
