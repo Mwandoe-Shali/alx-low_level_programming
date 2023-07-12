@@ -29,10 +29,10 @@ char *str_concat(char *s1, char *s2)
 	if (s3 == NULL)
 		return (NULL);
 
-	for (index = 0; s1[index]; index++)
+	for (index = 0; s1[index]; index++, concat_index++)
 		s3[concat_index++] = s1[index++];
 
-	for (index = 0; s2[index]; index++)
+	for (index = 0; s2[index]; index++, concat_index++)
 		s3[concat_index++] = s2[index++];
 
 	s3[concat_index] = '\0';
