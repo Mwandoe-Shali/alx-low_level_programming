@@ -6,7 +6,7 @@
  * which is a duplicate of the string str
  * @str: String to be copied
  *
- * Return:
+ * Return: pointer to the copied string (Success), NULL (Error)
  */
 char *_strdup(char *str)
 {
