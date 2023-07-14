@@ -43,3 +43,5 @@
 		You can assume that numbers and the addition of all the numbers can be stored in an int
 0x0B-malloc_free
 
+0x0C-more_malloc_free
+
