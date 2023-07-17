@@ -45,3 +45,5 @@
 
 0x0C-more_malloc_free
 
+0x0E. C - Structures, typedef
+
