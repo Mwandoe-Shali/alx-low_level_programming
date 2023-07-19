@@ -6,7 +6,7 @@
  * on each element of the array
  *
  * @array: array to iterate over
- * @size: the size of the array used 
+ * @size: the size of the array used
  * @action: pointer function to be used in the iteration of the array
  *
  * Return: void
