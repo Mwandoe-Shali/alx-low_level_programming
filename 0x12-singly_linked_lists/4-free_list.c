@@ -5,7 +5,6 @@
  * @head: head of the linked list.
  * Return: no return.
  */
-
 void free_list(list_t *head)
 {
 	list_t *current_node;
@@ -17,3 +16,4 @@ void free_list(list_t *head)
 		free(current_node);
 	}
 }
+
