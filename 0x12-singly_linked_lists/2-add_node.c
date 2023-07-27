@@ -1,14 +1,12 @@
-#include "lists_h"
-
+#include "lists.h"
 /**
- * add_node - function to a new node at the beginning
+ * add_node - adds a new node at the beginning
  * of a list_t list.
- *
- * @head: head of a linked list
- * @str: string to be duplicated and store the list
- *
- * Return: the address of the new element, or NULL if it failed
+ * @head: head of the linked list.
+ * @str: string to store in the list.
+ * Return: address of the head.
  */
+
 list_t *add_node(list_t **head, const char *str)
 {
 	list_t *new_node;
