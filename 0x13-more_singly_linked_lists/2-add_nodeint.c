@@ -14,11 +14,13 @@ listint_t *add_nodeint(listint_t **head, const int n)
 	new_node = malloc(sizeof(listint_t)); /*Allocate memory for the new node */
 	if (new_node == NULL) /* Check if memory allocation failed */
 	{
-		return (NULL); // Return NULL if memory allocation failed
+		return (NULL); /* Return NULL if memory allocation failed */
 	}
 
-	new_node->n = n; /* Set the value of the new node to the given integer 'n' */
-	new_node->next = *head; /* Set the 'next' pointer of the new node to the current head */
+	/* Set the value of the new node to the given integer 'n' */
+	new_node->n = n;
+	/* Set the 'next' pointer of the new node to the current head */
+	new_node->next = *head;
 
 	*head = new_node; /* Update the head of the list to point to the new node */
 
