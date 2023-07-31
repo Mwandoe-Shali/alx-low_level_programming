@@ -21,10 +21,11 @@ size_t print_listint(const listint_t *h)
 	{
 		/* Print the value of the current node */
 		printf("%d\n", current_node->n);
-		/* Move to the next node */
-		current_node = current_node->next;
 		/* Increment the count of nodes */
 		count++;
+		/* Move to the next node */
+		current_node = current_node->next;
+
 	}
 
 	/* Return the total number of nodes in the list */
