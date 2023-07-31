@@ -53,3 +53,8 @@
 
 0x10. C - Variadic functions
 
+0x12-singly_linked_lists
+
+0x13-more_singly_linked_lists
+
+
