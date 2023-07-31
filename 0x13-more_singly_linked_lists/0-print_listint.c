@@ -8,7 +8,10 @@
  */
 size_t print_listint(const listint_t *h)
 {
-	/* Declare a pointer variable 'current_node' and initialize it to the head of the list */
+	/* 
+ 	 * Declare a pointer variable 'current_node'
+ 	 * and initialize it to the head of the list
+   	 */
 	const listint_t *current_node = h;
 	/* Variable to keep track of the number of nodes */
 	size_t count = 0;
