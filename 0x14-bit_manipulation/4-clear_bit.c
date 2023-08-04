@@ -18,7 +18,7 @@ int clear_bit(unsigned long int *n, unsigned int index)
 	/* Create a mask with the corresponding bit set to 0 */
 	mask = ~(1UL << index);
 
-	/* Perform a bitwise AND operation with the mask and the number pointed by n */
+	/* Perform bitwise AND operation with the mask and the number pointed by n */
 	*n &= mask;
 
 	return (1);
