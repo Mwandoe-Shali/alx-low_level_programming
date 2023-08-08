@@ -38,7 +38,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		close(fd);
 		return (0);
 	}
-
 	/* Write to standard output */
 	num_written = write(STDOUT_FILENO, buffer, num_read);
 	if (num_written != num_read)
