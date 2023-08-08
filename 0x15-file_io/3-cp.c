@@ -35,7 +35,7 @@ int main(int argc, char **argv)
 	{
 		if (write(destination_fd, buffer, n) != n || destination_fd == -1)
 		{
-        		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 			exit(99);
 		}
 	}
