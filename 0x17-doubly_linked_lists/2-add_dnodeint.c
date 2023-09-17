@@ -5,7 +5,7 @@
  * @head: head of the DLL
  * @n: Data to be entered to the specific node
  *
- * Return: The address of the new element, 
+ * Return: The address of the new element,
  *			or NULL if it failed.
  */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
@@ -31,7 +31,7 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 	if (h != NULL)
 		h->prev = newnode;
 
-	*head = newnode;	
+	*head = newnode;
 
 	return (newnode);
 }
