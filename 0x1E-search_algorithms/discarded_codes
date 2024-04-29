@@ -1,0 +1,13 @@
+104-advanced_binary.c
+
+int advanced_binary(int *array, size_t size, int value)
+{
+	int idx;
+
+	idx = rec_search(array, size, value);
+
+	if (idx >= 0 && array[idx] != value)
+		return (-1);
+
+	return (idx);
+}
