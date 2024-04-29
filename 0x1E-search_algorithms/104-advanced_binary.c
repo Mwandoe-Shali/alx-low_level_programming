@@ -56,5 +56,5 @@ int advanced_binary(int *array, size_t size, int value)
     if (array == NULL || size == 0)
         return (-1);
 
-    return rec_search(array, size, value);
+    return (rec_search(array, size, value));
 }
