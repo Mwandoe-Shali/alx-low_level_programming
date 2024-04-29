@@ -1,51 +1,45 @@
 #include "search_algos.h"
-#include <math.h>
 
 /**
- * jump_list - searches for a value in an array of
- * integers using the Jump search algorithm
+ * jump_list - Searches for an algorithm in a sorted singly
+ *             linked list of integers using jump search.
+ * @list: A pointer to the  head of the linked list to search.
+ * @size: The number of nodes in the list.
+ * @value: The value to search for.
  *
- * @list: input list
- * @size: size of the array
- * @value: value to search in
- * Return: index of the number
+ * Return: If the value is not present or the head of the list is NULL, NULL.
+ *         Otherwise, a pointer to the first node where the value is located.
+ *
+ * Description: Prints a value every time it is compared in the list.
+ *              Uses the square root of the list size as the jump step.
  */
 listint_t *jump_list(listint_t *list, size_t size, int value)
 {
-	size_t idx, a, b;
-	listint_t *prev;
+	size_t one, two;
+	listint_t *node, *ruka;
 
 	if (list == NULL || size == 0)
 		return (NULL);
 
-	b = (size_t)sqrt((double)size);
-	idx = 0;
-	a = 0;
-
-	do {
-		prev = list;
-		a++;
-		idx = a * b;
-
-		while (list->next && list->idx < idx)
-			list = list->next;
-
-		if (list->next == NULL && idx != list->idx)
-			idx = list->idx;
-
-		printf("Value checked at idx [%d] = [%d]\n", (int)idx, list->n);
-
-	} while (idx < size && list->next && list->n < value);
-
-	printf("Value found between indexes ");
-	printf("[%d] and [%d]\n", (int)prev->idx, (int)list->idx);
-
-	for (; prev && prev->idx <= list->idx; prev = prev->next)
+	one = 0;
+	two = sqrt(size);
+	for (node = ruka = list; ruka->index + 1 < size && ruka->n < value;)
 	{
-		printf("Value checked at idx [%d] = [%d]\n", (int)prev->idx, prev->n);
-		if (prev->n == value)
-			return (prev);
+		node = ruka;
+		for (one += two; ruka->index < one; ruka = ruka->next)
+		{
+			if (ruka->index + 1 == size)
+				break;
+		}
+		printf("Value checked at index [%ld] = [%d]\n", ruka->index, ruka->n);
 	}
 
-	return (NULL);
+	printf("Value found between indexes [%ld] and [%ld]\n",
+			node->index, ruka->index);
+
+	for (; node->index < ruka->index && node->n < value; node = node->next)
+		printf("Value checked at index [%ld] = [%d]\n", node->index, node->n);
+	printf("Value checked at index [%ld] = [%d]\n", node->index, node->n);
+
+	return (node->n == value ? node : NULL);
 }
